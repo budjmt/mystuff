@@ -23,7 +23,11 @@ when ship turned
 
     *These can be standard abilities when unlocked
 -Alternate Ships:
-    Cosmic Anaconda: Joke ship from the description. Like the standard ship,
+    CosmicAnaconda: Joke ship from the description. Like the standard ship,
     but with alternate color pallate and propulsion.
     BOSS SHIPS: These would be the bosses ships. These would be very difficult
     to unlock, and lead to different story paths (you would face the SpaceViper)
+    BlackMamba: Black ship (obv) that is mostly cosmetic.
+    ThluffyBomber: Joke ship based on thluffy, the cs departments mascot.
+    Enemy Ships: Just standard enemy ships. This path would be uniform,
+    all enemies gone rogue.
