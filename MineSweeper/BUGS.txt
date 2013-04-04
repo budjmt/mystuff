@@ -1,0 +1,9 @@
+BUGS
+
+- The game after being reset does not function the same, including:
+ - 1s are no longer highlighted
+ - The X button on the window doesn't work
+
+- The game cannot end without crashing or using the X button on the window. i.e. endGame does not function properly
+
+-Mine endings don't work right.

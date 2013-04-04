@@ -1,0 +1,9 @@
+Stuff to do:
+*Generating and removing based on scrolling
+ALMOST DONE ^
+Generation of monsters
+ALMOST DONE ^
+ImageMans for everything
+
+Saving and loading
+Maintaining battle and menu

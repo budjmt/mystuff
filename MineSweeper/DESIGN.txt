@@ -1,0 +1,54 @@
+Michael Cohen, Shanshan Chen
+
+GOAL:
+To make the game Minesweeper
+
+INTERFACE:
+Minesweeper interface, it's a graphical window that responds to clicks
+
+USAGE:
+It ALLOCATES MEMORY. Future builds would include FILE I/O for saving and reading high scores. There's also quite a bit of POINTER TOMFOOLERY
+
+RESPONSIBILITIES:
+Michael: Coding the thing
+Shanshan: Design Doc and such (BUT IT'S 5 AM SO I'M DOING IT)
+
+DATA STRUCTURES:
+See below
+
+ALGORITHMS:
+See below
+
+TIMELINE:
+1/11/13 - The window creation and graphics aspects should be mostly figured out, and some of the underlying game should be working.
+MISSED
+
+1/18/13 - The game should be done, all that should be left is custom sized grids, that feature where the game searches out from where you've clicked, and bugs.
+HAHA ARE YOU JOKING
+
+1/25/13 - Game is sort of done, needs some bug fixes and a few more features.
+
+Grid of mines (Pointer to a series of linked lists)
+	mines are generated first, with -1 being the indicator
+	after that, each square in the grid checks its neighbors and
+	becomes the correct number.
+Clicking functionality
+	If a square has...
+		A flag : nothing happens
+		-1 : GAME OVER
+		else : number is revealed
+	Reset button
+	If right click, toggle flag.
+Timer
+New Game
+	On command line, three numbers, width, height, number of mines
+	(Obviously, if mines > width * height, the game doesn't launch)
+	Also, three defaults: 1, 8 by 8, 10 mines, 2, 16 by 16, 40
+	mines, and 3, 30 by 16, 99 mines.
+	Default if no number is added is 1.
+	In game, only reset, different grid size must be launched 		separately.
+Game End
+	Either when a mine is clicked or the last non mine space is
+	clicked
+
+

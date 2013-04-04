@@ -1,0 +1,5 @@
+TO DO
+
+- Make it so that when a 0 space is clicked, it spills into all squares that aren't mines around it
+
+- Add high score functionality, including a timer.

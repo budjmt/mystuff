@@ -1,0 +1,171 @@
+Systems Final Project Design Document - Minesweeper
+By Michael Cohen and Shanshan Chen
+
+Features:
+
+
+Attempted:
+When a space with a 0 is clicked, it will spill over into other squares
+Include a high score funtionality with a timer
+
+Bugs:
+After the game is reset, 1's are no longer hignlighted, and the X button
+ on the window no longer works
+The game annot end without crashing or using the X button on the window
+endGame does not function properly
+Mine endings don't work right
+
+Function & Function Headers:
+game.c
+	Creates and runs most of the game
+	/*========== space makeSpace() ==========
+	Inputs: int i
+		int j
+	Returns: The new space created
+
+	Takes i and j and initializes a space with x = i and y = j
+	Sets other variables to either 0 or NULL
+	====================*/
+
+	/*========== void printGrid() ==========
+	Inputs: grid g
+	Returns: nothing
+
+	Prints grid g
+	====================*/
+
+	/*========== void incNums() ==========
+	Inputs: space a
+	Returns: nothing
+
+	Sets the num variable within space a
+	====================*/
+
+	/*========== void placeMine() ==========
+	Inputs: grid gr
+		int x
+		int y
+	Returns: nothing
+
+	Randomly places a mine into gr, which has dimensions x and y
+	====================*/
+
+	/*========== grid setNums()==========
+	Inputs: grid gr
+		int xc
+		int yc
+		int z
+	Returns: gr after all changes have been made
+
+	Randomly places z number of mines into gr, with dimensions
+	 xc and yc
+	Sets the num variables of all spaces in gr
+	====================*/
+
+	/*========== grid initGrid() ==========
+	Inputs: int x
+		int y
+		int z
+	Returns: a new grid
+
+	Given x and y, the dimensions of the new grid, and z, the 
+	 number of mines to be placed in the grid, returns a new
+	 grid with these properties
+	====================*/
+
+	/*========== void freeGrid() ==========
+	Inputs: grid g
+	Returns: nothing
+
+	Frees the memory used to make g
+	====================*/
+
+	/*========== void drawFlag() ==========
+	Inputs: int dx
+		int dy
+		int box
+		int flagged
+	Returns: nothing
+
+	Draws a flag on the indicated space
+	====================*/
+
+	/*========== void flagSpace() ==========
+	Inputs: space s
+		int box
+	Returns: nothing
+
+	Toggles the flagged variable of space s
+	====================*/
+
+	/*========== void drawMine() ==========
+	Inputs: int x
+		int y
+		int box
+	Returns: nothing
+
+	Draws a mine on the indicated space
+	====================*/
+
+	/*========== void drawMines() ==========
+	Inputs: grid g
+		int box
+	Returns: nothing
+
+	Goes through g and displays all the mines
+	====================*/
+
+	/*========== void drawSpace() ==========
+	Inputs: space s
+		int box
+		ALLEGRO_FONT * font
+	Returns: nothing
+
+	Draws the num variable of s in the middle of the box and
+	 changes toggles clicked variable on
+	====================*/
+
+	/*========== space findSpace() ==========
+	Input: int mx
+	       int my
+	       int box
+	       int sd
+	Returns: the space which has been clicked
+
+	Calculates which space was clicked by the player
+	====================*/
+
+	/*========== void makeDisp() ==========
+	Inputs: ALLEGRO_DISPLAY ** d
+		int box
+		int x
+		int y
+	Returns: nothing
+
+	Makes a display with the boxes
+	====================*/
+
+	/*========== void reset() ==========
+	Inputs: int x
+		int y
+		int z
+		int box
+		grid * g
+		ALLEGRO DISPLAY ** d
+	Returns: nothing
+
+	Sets up a new game
+	====================*/
+
+	/*========== void endGame() ==========
+	Inputs: grid g
+		int x
+		int y
+		ALLEGRO DISPLAY * d
+		ALLEGRO_EVENT_QUEUE * q
+		ALLEGRO_FONT * f
+	Returns: nothing
+
+	Ends the game
+	====================*/
+
