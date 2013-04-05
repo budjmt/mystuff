@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<title>Log In</title>
+
+<br>
+<head>
+  <link href="../static/style.css" rel="stylesheet" type="text/css" />
+</head>
+<h1> Log in here! </h1>
+<body>
+<br><br>
+<form action=""  class="well form-inline" method="POST">
+  <input type="text" id = "tb" name="name">
+  <input type="submit" name="button" value="Login"><br>
+<br>
+{%if failed%}
+Login FAILED!
+{%else%}
+If you don't have an account, this will register one for you.
+{%endif%}
+
+</form>
+{%if pname%}
+<div class = "nameholder" id = {{pname}}></div>
+{%endif%}
+{%if pname%}
+<script src = "/static/jquery.js"></script>
+<script>
+$(document).ready(function() {
+$("#tb").val($(".nameholder").attr("id"));
+});
+</script>
+{%endif%}
+
+
+</body>
