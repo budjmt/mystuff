@@ -28,7 +28,7 @@ void contact() {
 }
 
 void checkWin() {
-  win = Serial.read();
+  win = (Serial.read() == '1') ? true : false;
   if (win) {
     digitalWrite(led, HIGH);
     tone(speaker, 200);
@@ -55,7 +55,7 @@ void sendValues() {
     Serial.print(",");
   }
   Serial.print(knobs[2]);
-  Serial.println();,
+  Serial.println();
 }
 
 void loop() {
